@@ -1,5 +1,5 @@
 # quickSort
-quickSort implementation in GO and Python
+quickSort implementation in GO
 
 ## Use GO Modules
 - go mod init
