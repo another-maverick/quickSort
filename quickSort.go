@@ -22,11 +22,8 @@ func Partition(InpArr []int, low, high int) int {
 			}
 		}
 
-		for {
+		for InpArr[j] > pivot{
 			j--
-			if (InpArr[j] <= pivot) || (j == 0) {
-				break
-			}
 		}
 		if i < j{
 			temp := InpArr[i]
@@ -51,8 +48,8 @@ func QuickSort(InpArr []int, low, high int) {
 }
 
 func main(){
-	var InpArr = []int{4,6,3,2,1,7,5,9,8,20,34,66,51}
-	//var InpArr = []int{4, 6, 3, 2, 1, 7, 5, 9, 8, 20, 34, 66, 51, 67, 55, 123, 435, 543, 666, 112, 344}
+	//var InpArr = []int{4,6,3,2,1,7,5,9,8,20,34,66,51}
+	var InpArr = []int{4, 6, 3, 2, 1, 7, 5, 9, 8, 20, 34, 66, 51, 67, 55, 123, 435, 543, 666, 112, 344}
 	fmt.Printf("Before sorting the input array is %v \n", InpArr)
 	QuickSort(InpArr, 0,len(InpArr)-1)
 	fmt.Printf("After sorting the array is %v \n", InpArr)
